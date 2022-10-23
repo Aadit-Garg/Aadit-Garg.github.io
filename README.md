@@ -1,1 +1,1 @@
-# aadit-garg.github.io
+# Aadit-Garg.github.io
