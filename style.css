@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Barlow:800&display=swap');
 
 * {
     margin: 0%;
@@ -7,13 +8,21 @@
     font-family: 'Open Sans', sans-serif;
 }
 
+body {
+    color: aliceblue;
+    background-color: rgba(0, 0, 0, 0.9);
+    /* font-size: calc(0.3em + 1vw); */
+}
+
 header {
     width: 100%;
-    height: 60px;
-    background-color: black;
+    height: 4em;
+    background-color: gray;
     color: whitesmoke;
     display: flex;
     align-items: center;
+    box-shadow: 0px 7px 10px 5px rgba(255, 255, 255, 0.4);
+    border-radius: 0px;
 }
 
 .img_box {
@@ -25,7 +34,7 @@ header {
     padding-left: 1%;
     padding-right: 1%;
     /* margin-right: 0.5%; */
-    /* background-color: rgba(255, 255, 255, 0.1); */
+    /* background-color: gray; */
     display: flex;
     align-items: center;
 }
@@ -37,13 +46,17 @@ header {
     /* margin-right: 10%; */
 }
 
-img {
+.img {
+    opacity: 1;
     border-radius: 100%;
     width: 48px;
     /* transition: border-radius 0.25s ease-out; */
+    transition: opacity 0.25s;
+    transition-delay: 1.30s;
 }
 
 .name {
+    /* background-color: gray; */
     color: whitesmoke;
     text-decoration: none;
     font-family: 'Open Sans';
@@ -80,4 +93,134 @@ img {
 .name:hover:after {
     transform: scaleX(1);
     transform-origin: bottom left;
+}
+
+.card {
+    /* opacity: 0; */
+    /* display: none; */
+    position: fixed;
+    backdrop-filter: blur(3px);
+    width: 0em;
+    height: 0em;
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 10px 10px 10px 10px;
+    top: 5%;
+    left: 7%;
+    transition: 0.5s ease-in-out;
+    transition-delay: 1s;
+    overflow: hidden;
+}
+
+.img_in_card {
+    width: 100%;
+    border-radius: 10px 10px 0px 0px;
+    opacity: 0.5;
+}
+
+.img_in_card:hover {
+    opacity: 1;
+}
+
+.img_box:hover .img,
+.card:hover~.img_box {
+    /* width: px; */
+    opacity: 0;
+    transition-delay: 0s;
+}
+
+.img_box:hover~.card,
+.card:hover,
+.img_box:focus~.card {
+    display: block;
+    left: 30%;
+    top: 10%;
+    transition-delay: 0s;
+    width: 20em;
+    height: 36em;
+}
+
+.i_c {
+    margin-left: 5%;
+    padding-bottom: 2%;
+}
+
+.u_contact {
+    color: rgba(255, 255, 255, 0.4);
+    /* background-color: aliceblue; */
+    width: 20%;
+    padding: 0%;
+    padding-top: 4%;
+    margin-left: 35%;
+    transition: 0.2s;
+}
+
+.u_hfu {
+    /* background-color: blue; */
+    width: 90%;
+    /* text-shadow: 3px 3px 7px rgba(255, 255, 255, 0.9); */
+    transition: 0.3s;
+}
+
+.u_hfu:hover {
+    color: rgb(255, 37, 37);
+    text-shadow: 7px 7px 7px rgba(255, 37, 37, 0.7);
+}
+
+.u_contact:hover {
+    color: rgba(255, 255, 255, 0.9);
+    border-bottom: 4px solid royalblue;
+    text-shadow: 3px 3px 7px rgba(255, 255, 255, 0.7);
+}
+
+.main {
+    margin-top: 3%;
+    padding-left: 2%;
+    display: flex;
+    flex-direction: column;
+}
+
+h2 {
+    padding-bottom: 2%;
+}
+
+.hello::after {
+    content: "Greetings!";
+    opacity: 0;
+    transition: 0.4s;
+    color: greenyellow;
+    font-family: 'Barlow'
+}
+
+.hello:hover:after {
+    opacity: 1;
+    color: orange;
+    background-color: black;
+}
+
+
+span:hover {
+    animation: color-change 2s infinite;
+}
+
+@keyframes color-change {
+
+    1% {
+        color: orangered;
+        text-shadow: 3px 3px 10px red;
+    }
+
+    35% {
+        color: orange;
+        text-shadow: 3px 3px 10px orange;
+    }
+
+    60% {
+        color: greenyellow;
+        text-shadow: 3px 3px 10px greenyellow;
+    }
+
+    100% {
+        color: yellow;
+        text-shadow: 3px 3px 10px yellow;
+    }
 }
