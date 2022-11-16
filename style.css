@@ -214,37 +214,6 @@ p {
     line-height: 40px;
 }
 
-@media screen and (max-width:450px) {
-
-
-
-    .main {
-        margin-left: 0.1%;
-        margin-top: 5%;
-        font-size: 15px;
-        margin-bottom: 9%;
-    }
-
-    .name {
-        font-size: 17px;
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    }
-
-    .hias {
-        border-radius: 10px;
-        background-color: rgba(127, 255, 255, 0.1);
-        margin-left: 5%;
-    }
-
-    p {
-        font-size: 18px;
-        line-height: 30px;
-        padding-left: 1%;
-        padding-right: 3%;
-    }
-
-}
-
 @media screen and (min-width: 600px) {
     .main {
         border-left: 3px solid aquamarine;
@@ -296,4 +265,36 @@ p {
 .hias span {
     color: aquamarine;
     text-decoration: underline;
+}
+
+@media screen and (max-width:450px) {
+
+    .main {
+        margin-left: 0.1%;
+        margin-top: 5%;
+        font-size: 15px;
+        margin-bottom: 9%;
+    }
+
+    .name {
+        font-size: 17px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+
+    .hias {
+        border-radius: 10px;
+        background-color: rgba(127, 255, 255, 0.1);
+        margin-left: 5%;
+    }
+
+    p {
+        font-size: 18px;
+        line-height: 30px;
+        padding-left: 1%;
+        padding-right: 3%;
+    }
+
+    .git {
+        left: 9%;
+    }
 }
