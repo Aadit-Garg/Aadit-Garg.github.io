@@ -18,6 +18,8 @@ body {
 }
 
 header {
+    /* top: 1%; */
+    /* position: relative; */
     width: 100%;
     height: 4em;
     /* background-color: gray; */
@@ -207,24 +209,91 @@ header {
 }
 
 
+p {
+    font-size: 21px;
+    line-height: 40px;
+}
+
 @media screen and (max-width:450px) {
+
+
+
     .main {
-        margin: 2%;
+        margin-left: 0.1%;
         margin-top: 5%;
         font-size: 15px;
+        margin-bottom: 9%;
     }
 
     .name {
         font-size: 17px;
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     }
+
+    .hias {
+        border-radius: 10px;
+        background-color: rgba(127, 255, 255, 0.1);
+        margin-left: 5%;
+    }
+
+    p {
+        font-size: 18px;
+        line-height: 30px;
+        padding-left: 1%;
+        padding-right: 3%;
+    }
+
 }
 
 @media screen and (min-width: 600px) {
     .main {
         border-left: 3px solid aquamarine;
     }
+
+    .box {
+        top: 30%;
+        right: 10%;
+        width: 200px;
+        aspect-ratio: 1;
+        /* height: 200px; */
+        background-color: rgba(127, 255, 255, 0.1);
+        position: fixed;
+        transform: rotatez(45deg);
+        transition: background-color 0.25s ease-out;
+        animation: rotate 12s infinite linear;
+    }
+
+    @keyframes rotate {
+        from {
+            transform: rotatez(0deg);
+        }
+
+        to {
+            transform: rotatez(180deg);
+        }
+    }
+
+    .box:hover {
+        /* 
+        box-shadow: -7px 7px 10px rgba(127, 255, 212, 0.7), 7px -7px 10px rgba(127, 255, 212, 0.7), 7px 7px 10px rgba(127, 255, 212, 0.7), -7px -7px 10px rgba(127, 255, 212, 0.7); */
+        background-color: rgba(127, 255, 212, 0.3);
+    }
 }
-.U_L{
-        text-decoration: underline;
+
+.U_L {
+    text-decoration: underline;
+    color: rgb(127, 255, 212);
+}
+
+.git {
+    position: relative;
+    left: 3.7%;
+    bottom: 1%;
+    font-family: monospace;
+    color: aquamarine;
+}
+
+.hias span {
+    color: aquamarine;
+    text-decoration: underline;
 }
