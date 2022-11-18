@@ -1,8 +1,22 @@
 <H1><a href="https://aadit-garg.github.io">PORTFOLIO SITE </a>[!UNDER CONSTRUCTION]🚧</H1>
 
 Hi!🚀🚀
+++++++++++++
+14-Nov-2022
+++++++++++++
++complete design CHANGE
 
++ADDED mobile support to most of the settings
+
+_______________________________________________________
+
+-content STILL LEFT
+
+-different sub-pages STILL LEFT
+_______________________________________________________
+++++++++++++
 18-Nov-2022
+++++++++++++
 +"what I do section"
 
 +gibberish addition
