@@ -208,7 +208,7 @@ header {
 
 .hellonamas {
     margin: 0%;
-    display: flex;
+    display: none;
     opacity: 0;
     position: absolute;
     height: 60px;
