@@ -150,6 +150,7 @@ header {
     transition-delay: 0s;
     width: 20em;
     height: 36em;
+    /* background-color: aliceblue; */
 }
 
 .i_c {
@@ -170,6 +171,7 @@ header {
 .u_hfu {
     /* background-color: blue; */
     width: 90%;
+
     /* text-shadow: 3px 3px 7px rgba(255, 255, 255, 0.9); */
     transition: 0.3s;
 }
@@ -180,6 +182,7 @@ header {
 }
 
 .u_contact:hover {
+    /* background-color: aliceblue; */
     color: rgba(255, 255, 255, 0.9);
     border-bottom: 4px solid royalblue;
     text-shadow: 3px 3px 7px rgba(255, 255, 255, 0.7);
@@ -228,8 +231,9 @@ header {
 }
 
 .hello:hover~.hellonamas {
-    opacity: 1;
     display: flex;
+    opacity: 1;
+
 }
 
 p {
@@ -257,7 +261,8 @@ p {
     text-decoration: underline;
 }
 
-@media screen and (max-width:500px) {
+
+@media screen and (max-width:450px) {
 
     .main {
         margin-left: 0.1%;
@@ -286,7 +291,7 @@ p {
 
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 450px) {
     .main {
         border-left: 3px solid aquamarine;
     }
