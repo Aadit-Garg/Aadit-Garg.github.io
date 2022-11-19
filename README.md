@@ -31,7 +31,7 @@ _______________________________________________________
 
 +minute design changes
 
-+more hover effects(oh!! god how many more you want?!!)
++more hover effects(oh god!! how many more you want?!!)
 
 +minimal design changes(cant you just stick to one🤨)
 
@@ -45,7 +45,7 @@ ________________________________________________________
 
 -mobile ui optimisation
 
--more fun elements(maybe/or maybe not)
+-more fun elements(maybe or maybe not)
 
 -optimisation and minimalism
 
